@@ -675,13 +675,13 @@ body{
 /* Footer Styles */
 .footer {
     background-color: var(--background-dark);
-    padding: 40px 14px 20px;
+    padding: 20px 14px 20px;
     color: var(--white-color);
     font-family: var(--font-primary);
 }
 
 .footer__container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -692,7 +692,7 @@ body{
         "contact address"
         "careers social"; 
     gap: 14px 30px; 
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 
 /* Attribution des zones de grid */
@@ -741,6 +741,7 @@ body{
 }
 
 
+
 /* Section Styles */
 .footer__section {
     display: flex;
@@ -752,7 +753,6 @@ body{
     color: var(--white-color);
     font-size: 24px;
     font-weight: 500;
-    margin-bottom: 3px;
 }
 
 
@@ -779,7 +779,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .footer__copyright {
@@ -794,15 +794,7 @@ body{
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .footer {
-        padding: 64px 24px 32px;
-    }
-
-    .footer__grid {
-        grid-template-columns: 1fr;
-        gap: 48px;
-        margin-bottom: 64px;
-    }
+    
 
     .footer__section {
         gap: 10px;
