@@ -422,7 +422,7 @@ body{
     background: rgba(11, 1, 33, 0.6); /* Fond légèrement transparent */
     backdrop-filter: blur(20px);
     border-radius: 24px;
-    padding: 32px;
+    padding: 50px;
     position: relative;
     overflow: hidden;
     box-shadow: 
@@ -535,18 +535,14 @@ body{
 
 .feature-card__link {
     color: var(--white-color);
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 14px;
     font-weight: 500;
     display: inline-flex;
     align-items: center;
 }
 
-.feature-card__link::after {
-    content: '→';
-    margin-left: 8px;
-    transition: transform 0.3s ease;
-}
+
 
 .feature-card__link:hover::after {
     transform: translateX(4px);
@@ -692,15 +688,16 @@ body{
     opacity: 0.7;
 }
 /* Footer Styles */
+/* Footer Styles */
 .footer {
     background-color: var(--background-dark);
-    padding: 20px 14px 20px;
+    padding: 40px 14px 20px;
     color: var(--white-color);
     font-family: var(--font-primary);
 }
 
 .footer__container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -711,7 +708,7 @@ body{
         "contact address"
         "careers social"; 
     gap: 14px 30px; 
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 /* Attribution des zones de grid */
@@ -735,7 +732,7 @@ body{
 .footer__link,
 .footer__address {
     color: rgba(255, 255, 255, 0.7);
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -760,7 +757,6 @@ body{
 }
 
 
-
 /* Section Styles */
 .footer__section {
     display: flex;
@@ -772,6 +768,7 @@ body{
     color: var(--white-color);
     font-size: 24px;
     font-weight: 500;
+    margin-bottom: 3px;
 }
 
 
@@ -798,7 +795,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 .footer__copyright {
@@ -813,7 +810,15 @@ body{
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    
+    .footer {
+        padding: 64px 24px 32px;
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+        margin-bottom: 64px;
+    }
 
     .footer__section {
         gap: 10px;
@@ -833,5 +838,3 @@ body{
         height: 24px;
     }
 }
-
-
