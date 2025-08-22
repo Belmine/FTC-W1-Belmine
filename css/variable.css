@@ -3,23 +3,34 @@
     --primary-color: #6E00FF;
     --secondary-color: #FF00E5;
     --background-dark: #0B0121;
-    --contour-color: #BB9BFF;
+    --contour-color: #BB9BFF26;
     --white-color:#ECECEC;
+
+    --button-bg: #20035E;
+    --font-primary: 'Montserrat', sans-serif;
+    
+
+
+    --header-height: 80px;
+    --mobile-menu-width: 100%;
+    --border-radius: 20px;
+    --transition: all 0.3s ease;
     
     /* Typographie */
-    --font-primary: 'Your-Font', sans-serif;
+    /* --font-primary: 'Your-Font', sans-serif;
     --font-size-base: 1.6rem;
-    
+     */
+
     /* Espacement */
-    --spacing-xs: 0.4rem;
+    /* --spacing-xs: 0.4rem;
     --spacing-sm: 0.8rem;
     --spacing-md: 1.6rem;
-    --spacing-lg: 2.4rem;
+    --spacing-lg: 2.4rem; */
     
     /* Breakpoints */
-    --mobile: 375px;
+    /* --mobile: 375px;
     --tablet: 768px;
-    --desktop: 1024px;
+    --desktop: 1024px; */
 
     /* Animations */
     --transition-speed: 0.3s;

@@ -7,21 +7,213 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/variable.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 
 <body>
-    <header>
-        <!-- Navigation -->
-    </header>
-    
-    <main>
-        <!-- Contenu principal -->
-    </main>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <img src="images/logo.png" alt="Vaultflow logo" class="logo__image">
+                <span class="logo__text">Vaultflow</span>
+            </div>
 
-    <footer>
-        <!-- Footer -->
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#features">Features</a></li>
+                    <li class="nav__item"><a href="#pricing">Pricing</a></li>
+                    <li class="nav__item"><a href="#about">About us</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="#download" class="btn btn--secondary">Download the app</a>
+                <a href="#expert" class="btn btn--primary">Talk to an expert</a>
+            </div>
+            <button class="header__mobile-toggle" aria-label="Menu">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+
+           
+        </div>
+
+        <!-- Menu mobile -->
+        <div class="mobile-menu">
+            <div class="mobile-menu__header">
+                <div class="header__logo">
+                    <img src="images/logo.png" alt="Vaultflow logo" class="logo__image">
+                    <span class="logo__text">Vaultflow</span>
+                </div>
+                <button class="mobile-menu__close" aria-label="Close menu">×</button>
+            </div>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About us</a></li>
+                </ul>
+            </nav>
+            <a href="#expert" class="btn btn--primary mobile-menu__cta">Talk to an expert</a>
+        </div>
+    </header>
+    <section class="hero" id="about">
+        <div class="hero__container">
+            <div class="hero__notification">
+                We just raised $20M in Series B. <a href="#" class="hero__notification-link">Learn more</a>
+            </div>
+            
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Modern analytics<br>
+                    for the modern world
+                </h1>
+                
+                <p class="hero__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                    Suspendisse varius enim in eros elementum tristique.
+                </p>
+                
+                <div class="hero__buttons">
+                    <a href="#" class="btn btn--normal">Download the app</a>
+                    <a href="#" class="btn btn--outline two">Talk to an expert</a>
+                </div>
+            </div>
+
+            <div class="hero__dashboard">
+                <img src="images/dashboard.png" alt="Analytics Dashboard" class="hero__dashboard-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="features__container">
+            <div class="features__header">
+                <h2 class="features__title">
+                    Features that<br>
+                    work for your<br>
+                    future.
+                </h2>
+                <p class="features__subtitle">
+                    Check out our amazing features and experience the<br>
+                    power of VaultFlow for yourself.
+                </p>
+            </div>
+
+            <div class="features__grid">
+                <!-- Analytics Dashboard Card -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <img src="images/analytics-icon.png" alt="Analytics Dashboard">
+                    </div>
+                    <h3 class="feature-card__title">Analytics Dashboard</h3>
+                    <p class="feature-card__description">
+                        Our Analytics Dashboard provides a clear overview of your data's narrative. Track historic data, analyze performance metrics, and make informed decisions that help you level up your game.
+                    </p>
+                    <a href="#" class="feature-card__link">View dashboard</a>
+                </div>
+
+                <!-- Digital Credit Tokens Card -->
+                <div class="feature-card">
+                    <div class="feature-card__icon">
+                        <img src="images/tokens-icon.png" alt="Digital Credit Tokens">
+                    </div>
+                    <h3 class="feature-card__title">Digital Credit Tokens</h3>
+                    <p class="feature-card__description">
+                        Reward and incentivize your community with our unique digital credit tokens. Our tokens can be customized to match your branding and can be flexibly set against any metrics you want to track.
+                    </p>
+                    <a href="#" class="feature-card__link">View tokens</a>
+                </div>
+
+                <div class="feature-card feature-card--large">
+                    <div class="feature-card__content">
+                        <div class="feature-card__icon">
+                            <img src="images/code-icon.png" alt="Code Collaboration">
+                        </div>
+                        <h3 class="feature-card__title">Code collaboration</h3>
+                        <p class="feature-card__description">
+                            Our advanced code analysis features help you stay in sync with your team and quickly resolve obstacles and conflicts. No matter where in the world they are. All from your own comfortable IDE.
+                        </p>
+                        <a href="#" class="feature-card__link">View code collaboration</a>
+                    </div>
+                    <div>
+                        <img src="images/digitalToken.png" alt="Code Collaboration" class="feature-card__image">
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="features__cta glow-border" id="pricing">
+                <h2 class="features__cta-title">
+                    Our powerful analytics<br>
+                    provides invaluable insights.
+                </h2>
+                <p class="features__cta-description">
+                    Unlock the power of data with our cutting-edge analytics product. Get instant insights with our user-friendly Analytics Dashboard, and take advantage of our innovative digital credit tokens to reward your customers and incentivize engagement.
+                </p>
+                <a href="#" class="btn btn--primary">Download the app</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <!-- Contact Section -->
+                <div class="footer__section">
+                    <h3 class="footer__title">Contact</h3>
+                    <ul class="footer__list">
+                        <li>Work inquires: work@vaultflow.com</li>
+                        <li>PR and speaking: press@vaultflow.com</li>
+                        <li>New business: newbusiness@vaultflow.com</li>
+                    </ul>
+                </div>
+
+                <!-- Careers Section -->
+                <div class="footer__section">
+                    <h3 class="footer__title">Careers</h3>
+                    <a href="mailto:careers@vaultflow.com" class="footer__link">Careers@vaultflow.com</a>
+                </div>
+
+                <!-- Address Section -->
+                <div class="footer__section">
+                    <h3 class="footer__title">Address</h3>
+                    <address class="footer__address">
+                        398 11th Street, Floor 2<br>
+                        San Francisco, CA 94103
+                    </address>
+                </div>
+
+                <!-- Social Section -->
+                <div class="footer__section">
+                    <h3 class="footer__title">Social</h3>
+                    <ul class="footer__social">
+                        <li><a href="#" class="footer__link">Twitter</a></li>
+                        <li><a href="#" class="footer__link">Instagram</a></li>
+                        <li><a href="#" class="footer__link">Tik Tok</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2023 Vaultflow. All Rights Reserved.</p>
+                <div class="header__logo">
+                    <img src="images/logo.png" alt="Vaultflow logo" class="logo__image">
+                    <span class="logo__text">Vaultflow</span>
+                </div>
+            </div>
+        </div>
     </footer>
+ 
+
+    
 
     <script src="js/main.js"></script>
     <script src="js/animations.js"></script>
